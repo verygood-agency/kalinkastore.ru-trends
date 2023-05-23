@@ -1,0 +1,89 @@
+.destinations-announcement {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(25% - 8px), 1fr));
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+}
+
+.destinations-announcement__link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+.destinations-announcement__link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.destinations-announcement__link:nth-child(10n+1) {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.destinations-announcement__link:nth-child(10n+1) .destinations-announcement__title {
+  font-size: 30px;
+}
+
+.destinations-announcement__link:nth-child(10n+6) {
+  grid-row: span 2;
+  grid-column: 3/span 2;
+}
+.destinations-announcement__link:nth-child(10n+6) .destinations-announcement__title {
+  font-size: 30px;
+}
+
+.destinations-announcement__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.destinations-announcement__photo {
+  width: 100%;
+  max-width: 100%;
+  transition: scale 0.3s;
+}
+
+.destinations-announcement__link:hover .destinations-announcement__photo {
+  scale: 1.05;
+}
+
+.destinations-announcement__details {
+  padding: 20px;
+  z-index: 5;
+  color: #ffffff;
+}
+
+.destinations-announcement__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 26px;
+  font-family: "Tenor Sans";
+}
+
+destinations-announcement__text {
+  margin: 0;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  font-family: "Montserrat";
+}

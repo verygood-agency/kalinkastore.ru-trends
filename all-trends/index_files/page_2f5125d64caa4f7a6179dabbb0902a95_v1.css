@@ -1,0 +1,174 @@
+
+
+/* Start:/local/templates/.default/components/intec.universe/main.categories/template.6_trends-page/style.css?16614320522692*/
+.container-46.intec-template-title {
+  display: none !important;
+}
+
+.container-237 {
+  margin-top: 0px !important;
+}
+
+.bestsellers-content {
+  padding-top: 0px;
+}
+
+.ronin-custom-cont-wrap {
+  background-color: #ffffff;
+}
+
+.ronin-custom-cont-wrap__title {
+  padding-top: 42px;
+}
+
+.cust-home-cat-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cust-home-cat-list__item {
+  position: relative;
+  width: calc(25% - 6px) !important;
+  transition-duration: 0.6s;
+  transition-property: box-shadow;
+  padding: 0;
+}
+
+.cust-home-cat-list__link {
+  text-decoration: none;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.cust-home-cat-list__link:hover,
+.cust-home-cat-list__link:focus {
+  text-decoration: none;
+}
+
+.cust-home-cat-list__img-wrap {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.cust-home-cat-list__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 0;
+  transition-duration: 0.4s;
+  object-position: top;
+}
+
+.cust-home-cat-list__content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.cust-home-cat-list__name {
+  margin: 0;
+  font-family: var(--ff4);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.cust-home-cat-list__link:hover {
+  box-shadow: 2px 6px 20px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cust-home-cat-list__link:hover .cust-home-cat-list__image {
+  transform: scale(1.1);
+}
+
+.cust-title {
+  text-align: center;
+  margin-top: 0;
+  font-family: var(--ff3);
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #000100;
+}
+
+
+.support-class {
+  padding-top: 50px;
+}
+
+.cust-container {
+  display: block;
+}
+
+.cust-wrapper {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+@media (max-width: 1024px) {
+  .cust-home-cat-list__link {
+    min-height: 295px;
+  }
+
+  .cust-home-cat-list__name {
+    font-size: 16px;
+  }
+
+  .cust-home-cat-list__content {
+    padding: 20px 10px;
+  }
+
+  .support-class {
+    padding-top: 35px;
+  }
+
+  .cust-container--mod {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .cust-home-cat-list__link {
+    min-height: 453px;
+  }
+
+  .cust-home-cat-list__name {
+    font-size: 14px;
+  }
+
+  .cust-home-cat-list__item {
+    width: calc(50% - 4px) !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .cust-home-cat-list__item {
+    width: 100% !important;
+  }
+
+  .cust-home-cat-list__link {
+    min-height: 435px;
+  }
+
+  .cust-home-cat-list__name {
+    font-size: 16px;
+  }
+}
+/* End */
+/* /local/templates/.default/components/intec.universe/main.categories/template.6_trends-page/style.css?16614320522692 */
