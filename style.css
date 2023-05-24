@@ -165,13 +165,14 @@
   .destinations-announcement {
     grid-template-columns: 1fr;
     grid-gap: 10px;
+    margin-bottom: 30px;
   }
   .destinations-announcement__details {
     position: initial;
     padding: 0 !important;
   }
   .destinations-announcement__title {
-    font-size: 18px;
+    font-size: 18px !important;
     color: #000100;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -217,5 +218,10 @@
   .destinations-announcement__link:nth-child(2n) .destinations-announcement__title {
     text-align: right;
     max-width: initial;
+  }
+  .button--big {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
   }
 }
