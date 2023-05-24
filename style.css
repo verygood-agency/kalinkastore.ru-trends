@@ -144,3 +144,78 @@
 .destinations-announcement__link:hover .destinations-announcement__title::after {
   width: 100%;
 }
+
+@media (max-width: 900px) {
+  .destinations-announcement {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .destinations-announcement__link:nth-child(10n+1) {
+    grid-row: initial;
+    grid-column: initial;
+  }
+  .destinations-announcement__link:nth-child(10n+6) {
+    grid-row: initial;
+    grid-column: initial;
+  }
+  .destinations-announcement__title {
+    font-size: 26px !important;
+  }
+}
+@media (max-width: 650px) {
+  .destinations-announcement {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .destinations-announcement__details {
+    position: initial;
+    padding: 0 !important;
+  }
+  .destinations-announcement__title {
+    font-size: 18px;
+    color: #000100;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .destinations-announcement__title::after {
+    display: none;
+  }
+  .destinations-announcement__text {
+    color: #000100;
+    opacity: 0.7;
+  }
+  .destinations-announcement__link::after {
+    display: none;
+  }
+  .destinations-announcement__photo {
+    width: initial;
+    height: initial;
+    object-fit: initial;
+  }
+  .destinations-announcement__link {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    color: #000100 !important;
+    text-decoration: none !important;
+  }
+  .destinations-announcement__link:hover .destinations-announcement__photo {
+    scale: initial;
+  }
+  .destinations-announcement__link:hover .destinations-announcement__details {
+    transform: none;
+  }
+  .destinations-announcement__link:nth-child(2n) {
+    grid-template-columns: 1fr 120px;
+  }
+  .destinations-announcement__link:nth-child(2n) .destinations-announcement__photo {
+    order: 2;
+  }
+  .destinations-announcement__link:nth-child(2n) .destinations-announcement__text {
+    text-align: right;
+  }
+  .destinations-announcement__link:nth-child(2n) .destinations-announcement__title {
+    text-align: right;
+    max-width: initial;
+  }
+}
