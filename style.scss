@@ -16,7 +16,9 @@
   max-width: max-content;
   background-color: #b1191e;
   border-radius: 2px;
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     text-decoration: none;
     color: #ffffff;
     opacity: 0.8;
@@ -148,6 +150,37 @@
   }
 }
 
+.catalog__header-title--mod {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.33;
+  font-family: "Tenor Sans", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.catalog__header-subtitle {
+  margin-top: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: #000100;
+  opacity: 0.6;
+  &:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+.cust-article-full__back-link span {
+  color: #383b47 !important;
+  display: block;
+  font-size: 14px;
+}
+
 @media (max-width: 900px) {
   .destinations-announcement {
     grid-template-columns: repeat(2, 1fr);
@@ -180,10 +213,9 @@
     font-size: 18px !important;
     color: #000100;
     padding-bottom: 0;
-      margin-bottom: 0;
+    margin-bottom: 0;
     &::after {
       display: none;
-
     }
   }
   .destinations-announcement__text {
@@ -209,14 +241,14 @@
     &:hover {
       .destinations-announcement__photo {
         scale: initial;
-    }
-    .destinations-announcement__details {
-      transform: none;
-  }
+      }
+      .destinations-announcement__details {
+        transform: none;
+      }
     }
 
     &:nth-child(2n) {
-      grid-template-columns:1fr 120px;
+      grid-template-columns: 1fr 120px;
 
       .destinations-announcement__photo {
         order: 2;
