@@ -1,6 +1,7 @@
 # kalinkastore.ru-trends
 
  Обновление шаблонов страниц для Трендов и детальной страницы отдельного тренда
+ ссылка на демо: https://verygood-agency.github.io/kalinkastore.ru-trends/
 
 ## Для программиста
 
